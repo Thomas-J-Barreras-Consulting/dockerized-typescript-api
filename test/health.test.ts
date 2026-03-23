@@ -7,7 +7,7 @@ describe("GET /", () => {
 
     expect(res.status).toBe(200);
     expect(res.body).toMatchObject({
-      service: "typescript-api-github-actions-ci",
+      service: "dockerized-typescript-api",
       version: expect.any(String),
       environment: expect.any(String),
     });
@@ -21,7 +21,7 @@ describe("GET /health", () => {
     expect(res.status).toBe(200);
     expect(res.body).toMatchObject({
       status: "ok",
-      service: "typescript-api-github-actions-ci",
+      service: "dockerized-typescript-api",
       timestamp: expect.any(String),
     });
 
